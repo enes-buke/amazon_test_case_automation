@@ -10,8 +10,7 @@
 🔶 **Error Handling**: *Ensures correct error messages for invalid actions.*    
   
 ### **Setup**
-
-
+---
    **Clone the repository**;    
    https://github.com/enes-buke/amazon_test_case_automation.git     
 
