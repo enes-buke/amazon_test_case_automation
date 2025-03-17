@@ -7,7 +7,6 @@
 - Product Search: Tests if the search results are displayed correctly.
 -  Add to Cart: Verifies if products can be added to the shopping cart.
 - Page Navigation: Ensures the navigation between product pages works.
-- Pop-up Handling: Handles cookie consent and other pop-ups.
 - Error Handling: Ensures correct error messages for invalid actions.
  
 ### Setup
