@@ -9,6 +9,7 @@
 🔶 **Page Navigation**: *Ensures the navigation between product pages works.*    
 🔶 **Error Handling**: *Ensures correct error messages for invalid actions.*    
 
+--------------------------------------------------------------------------------
   
 ## ❕ **Setup**
 
