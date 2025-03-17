@@ -9,12 +9,11 @@
 - Page Navigation: Ensures the navigation between product pages works.
 - Pop-up Handling: Handles cookie consent and other pop-ups.
 - Error Handling: Ensures correct error messages for invalid actions.
-
+ 
 ### Setup
+
    **Clone the repository**:  
-  ```bash
 git clone https://github.com/enes-buke/amazon_test_case_automation.git
 
 ## **Lisence**  
-
 _This project is open-sourced software licensed under the_ [MIT license.](Lisence.md)
