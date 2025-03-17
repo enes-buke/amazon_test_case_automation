@@ -1,4 +1,4 @@
-#  **Amazon Automation Test Case**
+#  **Amazon Automation Test**
 #### ⭕ *This project automates test cases for the Amazon website using Python and Selenium WebDriver.*
 
 
