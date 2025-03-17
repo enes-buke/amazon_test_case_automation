@@ -1,13 +1,13 @@
-# **Amazon Test Case Automation**
----------------------------------------------------------------------------------------------
+# >**Amazon Test Case Automation**
+---
 #### This project automates test cases for the Amazon website using Python and Selenium WebDriver.
 
 ## **Features**
 
-- Product Search: Tests if the search results are displayed correctly.
--  Add to Cart: Verifies if products can be added to the shopping cart.
-- Page Navigation: Ensures the navigation between product pages works.
-- Error Handling: Ensures correct error messages for invalid actions.
+- *Product Search: Tests if the search results are displayed correctly.*
+- *Add to Cart: Add to Cart: Verifies that products can be added to and removed from the shopping cart..*
+- *Page Navigation: Ensures the navigation between product pages works.*
+- *Error Handling: Ensures correct error messages for invalid actions.*
  
 ### Setup
 
