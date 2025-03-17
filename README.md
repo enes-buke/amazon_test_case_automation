@@ -12,8 +12,8 @@
   
 ### **Setup**
 --
-   **Clone the repository**;    
-   https://github.com/enes-buke/amazon_test_case_automation.git     
+**Clone the repository**;    
+https://github.com/enes-buke/amazon_test_case_automation.git     
 
 ## **Lisence**  
 _This project is open-sourced software licensed under the_ [MIT license.](Lisence.md)
