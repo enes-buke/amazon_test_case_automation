@@ -1,7 +1,5 @@
 #  **Amazon Test Case Automation**
-#### ⭕ This project automates test cases for the Amazon website using Python and Selenium WebDriver.
-
-
+#### ⭕ *This project automates test cases for the Amazon website using Python and Selenium WebDriver.*
 
 
 ## **Features**
@@ -13,8 +11,8 @@
   
 ### Setup
 
-   **Clone the repository**:  
-git clone https://github.com/enes-buke/amazon_test_case_automation.git
+   **Clone the repository**;    
+   https://github.com/enes-buke/amazon_test_case_automation.git     
 
 ## **Lisence**  
 _This project is open-sourced software licensed under the_ [MIT license.](Lisence.md)
