@@ -1,6 +1,7 @@
 # **Amazon Test Case Automation**
+___________________________________________________________________________________________________
 #### This project automates test cases for the Amazon website using Python and Selenium WebDriver.
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## **Features**
 
 - Product Search: Tests if the search results are displayed correctly.
