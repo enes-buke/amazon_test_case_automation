@@ -8,6 +8,7 @@
 🔶 **Add to Cart**: Add to Cart: *Verifies that products can be added to and removed from the shopping cart..*    
 🔶 **Page Navigation**: *Ensures the navigation between product pages works.*    
 🔶 **Error Handling**: *Ensures correct error messages for invalid actions.*    
+
   --
 ### **Setup**
 
