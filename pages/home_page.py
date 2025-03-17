@@ -11,7 +11,7 @@ class HomePage(BasePage):
         try:
             self.driver.execute_script("document.getElementById('sp-cc-accept').click();")
         except Exception as e:
-            print(f"The cookie pop-up didn't appear...: {e}")
+            print(f"The cookie pop-up can't be closed..: {e}")
 
     def send_keys_samsung(self):
         self.element_send_keys('samsung', self.SEARCH_BOX)

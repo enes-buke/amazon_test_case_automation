@@ -3,10 +3,10 @@ from pages.base_page import BasePage
 
 
 class ShoppingCartPage(BasePage):
-    PRODUCT_IN_CART = (By.CSS_SELECTOR, ".a-truncate-full") #SEPETTEKİ ÜRÜNÜN İSMİ  #//span[@class="a-truncate-full a-offscreen"
-    DELETE_BUTTON =(By.XPATH, "//button/span[@class='a-icon a-icon-small-trash']") #SİLME BUTONU
-    VERIFY_DELETE=(By.CSS_SELECTOR, '.a-size-base.sc-list-item-removed-msg-text-delete') #SİLİNDİĞİNİ DOĞRULA
-    HOME_PAGE = (By.ID, 'nav-logo-sprites') #ANASAYFA
+    PRODUCT_IN_CART = (By.CSS_SELECTOR, ".a-truncate-full")
+    DELETE_BUTTON =(By.XPATH, "//button/span[@class='a-icon a-icon-small-trash']")
+    VERIFY_DELETE=(By.CSS_SELECTOR, '.a-size-base.sc-list-item-removed-msg-text-delete')
+    HOME_PAGE = (By.ID, 'nav-logo-sprites')
     verify_card_page="nav_cart"
     delete_product_verify="Alışveriş Sepetiniz konumundan kaldırıldı."
 
@@ -14,9 +14,6 @@ class ShoppingCartPage(BasePage):
     def product_in_cart(self):
         product_text=self.find_element(*self.PRODUCT_IN_CART).get_attribute("textContent")
         return product_text
-
-    def get_product_in_cart_text(self):
-        return self.get_text(self.PRODUCT_IN_CART)
 
     def click_delete_product(self):
         self.click_element(self.DELETE_BUTTON)

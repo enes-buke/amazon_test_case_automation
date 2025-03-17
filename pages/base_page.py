@@ -4,9 +4,11 @@ from selenium.webdriver.support import expected_conditions as ec
 
 
 class BasePage(object):
+
     def __init__(self, driver):
         self.driver = driver
         self.wait = WebDriverWait(self.driver, 20)
+
 
     def get_current_url(self):
         return self.driver.current_url
@@ -24,20 +26,13 @@ class BasePage(object):
         self.wait_element(locator)
         self.driver.find_element(*locator).click()
 
-    def scroll_element(self, locator):
-        element = self.driver.find_element(*locator)
-        self.driver.execute_script("arguments[0].scrollIntoView();", element)
-
     def element_send_keys(self, text, locator):
         self.wait.until(ec.visibility_of_element_located(locator))
         element=self.driver.find_element(*locator)
         element.send_keys(text)
 
-    def hover_action(self, *locator):
-        element = self.find_element(*locator)
-        hover = ActionChains(self.driver).move_to_element(element)
-        hover.perform()
+    def scroll_by_amount(self, x_offset, y_offset):
+        self.driver.execute_script("window.scrollBy(arguments[0], arguments[1]);", x_offset, y_offset)
 
     def get_text(self, locator):
         return self.wait_element(locator).text
-
