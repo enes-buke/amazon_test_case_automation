@@ -13,6 +13,9 @@ class BasePage(object):
     def get_current_url(self):
         return self.driver.current_url
 
+    def get_title(self):
+        return self.driver.title
+
     def find_element(self, *locator):
         return self.driver.find_element(*locator)
 

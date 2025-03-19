@@ -7,8 +7,11 @@ class ShoppingCartPage(BasePage):
     DELETE_BUTTON =(By.XPATH, "//button/span[@class='a-icon a-icon-small-trash']")
     VERIFY_DELETE=(By.CSS_SELECTOR, '.a-size-base.sc-list-item-removed-msg-text-delete')
     HOME_PAGE = (By.ID, 'nav-logo-sprites')
+    PAGE_TITLE = ('Amazon.com.tr: Elektronik, bilgisayar, akıllı telefon, kitap, oyuncak, yapı market, ev, '
+                  'mutfak, oyun konsolları ürünleri ve daha fazlası için internet alışveriş sitesi')
     verify_card_page="nav_cart"
     delete_product_verify="Alışveriş Sepetiniz konumundan kaldırıldı."
+
 
 
     def product_in_cart(self):
@@ -23,6 +26,9 @@ class ShoppingCartPage(BasePage):
 
     def click_homepage(self):
         self.click_element(self.HOME_PAGE)
+
+    def is_correct_title(self, expected_title):
+        return self.get_title() == expected_title
 
 
 

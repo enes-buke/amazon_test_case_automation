@@ -20,7 +20,8 @@ class CheckAmazonShoppingTest(BaseTest):
         product_category_page.scroll_by_amount(0,9000)
 
         product_category_page.click_second_page()
-        self.assertIn(product_category_page.VERIFY_SECOND_PAGE, product_category_page.get_current_url(), 'ERROR: The second page cannot be accessed.')
+        self.assertIn(product_category_page.VERIFY_SECOND_PAGE, product_category_page.get_current_url(),
+                      'ERROR: The second page cannot be accessed.')
         product_category_page.click_third_product()
 
 
@@ -36,7 +37,8 @@ class CheckAmazonShoppingTest(BaseTest):
 
 
         shopping_cart_page=ShoppingCartPage(self.driver)
-        self.assertIn(shopping_cart_page.verify_card_page,shopping_cart_page.get_current_url() , 'ERROR: Not on the shopping cart page.')
+        self.assertIn(shopping_cart_page.verify_card_page,shopping_cart_page.get_current_url() , 'ERROR: Not on '
+                                                                                            'the shopping cart page.')
         cart_product = shopping_cart_page.product_in_cart() #-----------#
         self.assertIn(product_name, cart_product, "ERROR: The product has not been added to your cart,"
                                                   " or the wrong product has been added.")
@@ -44,6 +46,8 @@ class CheckAmazonShoppingTest(BaseTest):
         self.assertIn(shopping_cart_page.delete_product_verify,shopping_cart_page.verify_delete_product(),
                       'ERROR: The product could not be removed from your cart.')
         shopping_cart_page.click_homepage()
+        self.assertEqual(shopping_cart_page.PAGE_TITLE,shopping_cart_page.get_title(),'ERROR: Not redirected to the '
+                                                                                      'homepage.')
 
 
 
